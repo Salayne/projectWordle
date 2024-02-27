@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/guessOne"
+        android:layout_width="152dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/guess_1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guessOneCheck"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/guess_1_check"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessOne" />
+
+    <TextView
+        android:id="@+id/guessTwo"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/guess_2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessOneCheck" />
+
+    <TextView
+        android:id="@+id/guessTwoCheck"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/guess_2_check"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessTwo" />
+
+    <TextView
+        android:id="@+id/guessThree"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/guess_3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessTwoCheck" />
+
+    <TextView
+        android:id="@+id/guessThreeCheck"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/guess_3_check"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessThree" />
+
+    <EditText
+        android:id="@+id/guessInput"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Enter 4 letter guess here"
+        android:inputType="text"
+        android:maxLength="4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessThreeCheck"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/guess"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toEndOf="@+id/guessInput" />
+
+    <TextView
+        android:id="@+id/guessOneDisplay"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toEndOf="@+id/guessOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guessOneDisplayCheck"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guessOneCheck"
+        app:layout_constraintTop_toBottomOf="@+id/guessOneDisplay" />
+
+    <TextView
+        android:id="@+id/guessTwoDisplay"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guessTwo"
+        app:layout_constraintTop_toBottomOf="@+id/guessOneDisplayCheck" />
+
+    <TextView
+        android:id="@+id/guessTwoDisplayCheck"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guessTwoCheck"
+        app:layout_constraintTop_toBottomOf="@+id/guessTwoDisplay" />
+
+    <TextView
+        android:id="@+id/guessThreeDisplay"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guessThree"
+        app:layout_constraintTop_toBottomOf="@+id/guessTwoDisplayCheck" />
+
+    <TextView
+        android:id="@+id/guessThreeDisplayCheck"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/guessThreeCheck"
+        app:layout_constraintTop_toBottomOf="@+id/guessThreeDisplay" />
+
+    <Button
+        android:id="@+id/gameoverButton"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:text="Game over Click here to play again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="461dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
