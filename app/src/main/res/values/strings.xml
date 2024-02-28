@@ -8,4 +8,7 @@
     <string name="guess_2">Guess #2</string>
     <string name="guess_1_check">Guess #1 Check</string>
     <string name="guess_1">Guess #1</string>
+    <string name="restart">RESTART</string>
+    <string name="play_again">Play Again</string>
+
 </resources>
