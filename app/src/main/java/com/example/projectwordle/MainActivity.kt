@@ -39,18 +39,17 @@ class MainActivity : AppCompatActivity() {
                 userGuess.text.clear()
             }
             else if (guess2display.text.isEmpty()) {
-                    guess2display.text = guess
-                    guess2CheckDisplay.text = result
-                    userGuess.text.clear()
-                }
-            else{
-                    guess3display.text.isEmpty()
-                    guess3display.text = guess
-                    guess3CheckDisplay.text = result
-                    userGuess.text.clear()
-                }
-
+                guess2display.text = guess
+                guess2CheckDisplay.text = result
+                userGuess.text.clear()
             }
+            else{
+                guess3display.text.isEmpty()
+                guess3display.text = guess
+                guess3CheckDisplay.text = result
+                userGuess.text.clear()
+            }
+
         }
     }
 
@@ -73,5 +72,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+}
 
 
