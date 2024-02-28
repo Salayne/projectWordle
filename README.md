@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 http://i.imgur.com/link/to/your/gif/file.gif
 
-<img src='https://imgur.com/a/GWiIRsx' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/GWiIRsx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ScreenToGif
 
